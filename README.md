@@ -1,7 +1,7 @@
 **LAPORAN ANALISIS WIDGET**
 **PROJECT APLIKASI MOBILE: MYSHOP MINI**
 
-**Mata Kuliah:** Mobile Programming
+**Mata Kuliah:** Mobile Programming,
 **Platform:** Flutter
 
 ### A. Pendahuluan
