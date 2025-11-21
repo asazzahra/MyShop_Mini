@@ -50,7 +50,4 @@ Kelompok widget ini menangani respon dari sentuhan pengguna.
 * **OutlinedButton**: Tombol dengan garis tepi yang digunakan untuk aksi "Add to Cart".
 
 ### C. Kesimpulan
-Pembangunan antarmuka "MyShop Mini" didominasi oleh penggunaan **Layout Widget** (`Column`, `Row`) untuk struktur, dan **Container** untuk dekorasi visual modern. Penggunaan `GridView.builder` dipilih untuk efisiensi memori dalam menampilkan daftar produk yang dinamis.
-
----
-*Laporan ini disusun sebagai bagian dari dokumentasi penyelesaian soal UTS.*
+Pembangunan antarmuka "MyShop Mini" didominasi oleh penggunaan **Layout Widget** (`Column`, `Row`) untuk struktur, dan **Container** untuk dekorasi visual modern. Penggunaan `GridView.builder` dipilih untuk efisiensi memori dalam menampilkan daftar produk yang dinamis. Widget GestureDetector memegang peran vital untuk memenuhi logika navigasi antar halaman.
