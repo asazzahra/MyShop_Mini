@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'product_detail.dart';
 
 class ProductListScreen extends StatelessWidget {
-  final String categoryName; // Menerima data kategori yang dipilih [cite: 25]
+  final String categoryName; // Menerima data kategori yang dipilih
 
   const ProductListScreen({super.key, required this.categoryName});
 
   @override
   Widget build(BuildContext context) {
     // --- 1. DEFINISI DATA MENTAH (DUMMY DATA) PER KATEGORI ---
-    // Data statis digunakan karena tidak ada database/API [cite: 29]
+    // Data statis digunakan karena tidak ada database/API
 
     final List<Map<String, dynamic>> snacks = [
       {
@@ -202,7 +202,7 @@ class ProductListScreen extends StatelessWidget {
 
             const SizedBox(height: 20),
 
-            // GRID PRODUCT LIST [cite: 28]
+            // GRID PRODUCT LIST
             // Menampilkan produk dalam format Grid 2 kolom
             Expanded(
               child: GridView.builder(
@@ -255,7 +255,7 @@ class ProductListScreen extends StatelessWidget {
                   size: 20,
                   color: Colors.black,
                 ),
-                // Navigasi Back (Kembali) [cite: 40]
+                // Navigasi Back (Kembali)
                 onPressed: () => Navigator.pop(context),
               ),
               Column(
@@ -269,7 +269,7 @@ class ProductListScreen extends StatelessWidget {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    categoryName, // Judul Halaman sesuai Kategori [cite: 25]
+                    categoryName, // Judul Halaman sesuai Kategori
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 22,
@@ -319,7 +319,7 @@ class ProductListScreen extends StatelessWidget {
     Color borderColor,
   ) {
     return GestureDetector(
-      // NAVIGASI: Klik produk -> Detail Produk [cite: 30, 32]
+      // NAVIGASI: Klik produk -> Detail Produk
       onTap: () {
         Navigator.push(
           context,
@@ -375,7 +375,7 @@ class ProductListScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  product["price"]!, // Menampilkan harga [cite: 31]
+                  product["price"]!, // Menampilkan harga
                   style: const TextStyle(
                     fontSize: 13,
                     fontWeight: FontWeight.bold,
