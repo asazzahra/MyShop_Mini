@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ProductDetailScreen extends StatelessWidget {
-  // Menerima data produk dari halaman list [cite: 32]
+  // Menerima data produk dari halaman list
   final String name;
   final String price;
   final String imagePath;
@@ -55,7 +55,7 @@ class ProductDetailScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         IconButton(
-                          // Navigasi Kembali (Pop) [cite: 40]
+                          // Navigasi Kembali (Pop)
                           onPressed: () => Navigator.pop(context),
                           icon: const Icon(Icons.arrow_back_ios, size: 20),
                         ),
@@ -65,7 +65,7 @@ class ProductDetailScreen extends StatelessWidget {
                   ),
                 ),
 
-                // 3. Gambar Produk [cite: 36]
+                // 3. Gambar Produk
                 Center(
                   child: Padding(
                     padding: const EdgeInsets.all(40.0),
@@ -136,7 +136,7 @@ class ProductDetailScreen extends StatelessWidget {
 
                   const SizedBox(height: 10),
 
-                  // Baris 2: Nama Produk & Harga [cite: 37, 38]
+                  // Baris 2: Nama Produk & Harga
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
