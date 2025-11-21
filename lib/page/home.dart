@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // 1. HEADER: Menampilkan Logo dan Nama Aplikasi [cite: 16]
+              // 1. HEADER: Menampilkan Logo dan Nama Aplikasi
               _buildHeader(),
 
               const SizedBox(height: 20),
@@ -38,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
               const SizedBox(height: 25),
 
-              // 3. KATEGORI [cite: 9]
+              // 3. KATEGORI
               // Bagian ini memenuhi syarat menampilkan daftar kategori
               Text(
                 "Category",
@@ -49,7 +49,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               const SizedBox(height: 15),
 
-              // Layout Kategori menggunakan Row agar sejajar horizontal [cite: 20]
+              // Layout Kategori menggunakan Row agar sejajar horizontal
               Row(
                 children: [
                   Expanded(
@@ -301,7 +301,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  // Widget Item Kategori [cite: 21]
+  // Widget Item Kategori
   Widget _buildCategoryItem(
     BuildContext context,
     String label,
@@ -309,10 +309,10 @@ class _HomeScreenState extends State<HomeScreen> {
     Color colorTop,
     Color colorBottom,
   ) {
-    // Menggunakan GestureDetector untuk menangani klik [cite: 22]
+    // Menggunakan GestureDetector untuk menangani klik
     return GestureDetector(
       onTap: () {
-        // NAVIGASI: Berpindah ke ProductListScreen dengan membawa nama kategori [cite: 23]
+        // NAVIGASI: Berpindah ke ProductListScreen dengan membawa nama kategori
         Navigator.push(
           context,
           MaterialPageRoute(
