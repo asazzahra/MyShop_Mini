@@ -14,14 +14,15 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner:
           false, // Menghilangkan banner debug di pojok kanan atas
-      title: 'MyShop Mini', // Judul Aplikasi [cite: 7]
+      title: 'MyShop Mini', // Judul Aplikasi
       theme: ThemeData(
         useMaterial3: true,
+        scaffoldBackgroundColor: Colors.white, // Latar lelakang default putih
         // Menerapkan Font Poppins untuk seluruh teks dalam aplikasi agar konsisten
         textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
       ),
-      // Halaman pertama yang dibuka adalah HomeScreen [cite: 14]
+      // Halaman pertama yang dibuka adalah HomeScreen
       home: const HomeScreen(),
     );
   }
