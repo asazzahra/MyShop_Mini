@@ -12,14 +12,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'MyShop Mini',
+      debugShowCheckedModeBanner:
+          false, // Menghilangkan banner debug di pojok kanan atas
+      title: 'MyShop Mini', // Judul Aplikasi [cite: 7]
       theme: ThemeData(
         useMaterial3: true,
-        // 2. MENGGUNAKAN FONT POPPINS SECARA GLOBAL
+        // Menerapkan Font Poppins untuk seluruh teks dalam aplikasi agar konsisten
         textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme),
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
       ),
+      // Halaman pertama yang dibuka adalah HomeScreen [cite: 14]
       home: const HomeScreen(),
     );
   }
